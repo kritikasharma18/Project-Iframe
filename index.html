@@ -4,27 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            padding: 0%;
-            margin: 0%;
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 725px;
+        border: 2px solid black;
+        margin-top: 40px   ;
+    }
+        .header {
+            height: 20%;
+            background-color:navy;
         }
-        body{
-            background-image: url(planet.jpg);
-            background-size: cover;
+        .center{
+            height: 60%;
+            display:flex;
+            flex-direction: row;
+
         }
-        .planet{
-            margin-top: 300px;
-            font-size: 46px;
-            background-color: rgba(48, 48, 59, 0.5);
+        .left{
+            height: 100%;
+            width: 30%;
+            background-color:beige;
+        }
+        .right{
+            height: 100%;
+            width: 70%;
+            flex-direction: row;
+        }
+          .top{
+            height: 50%;
+            background-color: darkgrey;
+        }
+        .bottom{
+            height: 50%;
+            display:flex;
+
+        }
+            .b1{
+                height: 100%;
+                width: 50%;
+                background-color: skyblue;
+            }
+             .b2{
+                height: 100%;
+                width: 50%;
+                background-color: burlywood;
+            }
+        .footer{
+            height: 20%;
+            background-color: navy;
+        }
+        .header,.footer{
             color: white;
-            height: 200px;
-            padding: 35px;
         }
-    </style>
-</head>
+
+</style>
+    </head>
+
 <body>
-    <div class="planet"><h1 align="center">The Wonders of Space</h1>
-    <p align="center">A universe of stars, planets and endless mysteries waiting to be explored.</p></div>
+    <h1 align="center">Flex box</h1>
+    <div class="container">
+        <div class="header"><H2 align="center">Header</H2></div>
+            <div class="center">
+                <div class="left"><H2 align="center">Left</H2></div>
+                 <div class="right">
+                    <div class="top"><H2 align="center">Top</H2></div>
+                    <div class="bottom">
+                        <div class="b1"><H2 align="center">Bottom 1</H2></div>
+                        <div class="b2"><H2 align="center">Bottom 2</H2></div>
+                    
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer"><H2 align="center">Footer</H2></div>
+            </div>
+        
+    </div>
 </body>
 </html>
