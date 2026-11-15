@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 450px;
+            background-color: blanchedalmond;
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin-top: 150px;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+       .s1 {
+            background-color: rebeccapurple;
+            animation: color 2s infinite;
+        }
+
+            @keyframes color {
+            0%, 100% {
+            background-color: rebeccapurple;
+            }
+
+            50% {
+            background-color: violet;
+                }
+        }
+        .s2{
+            background-color: red;
+            animation-name: move;
+        }
+        @keyframes move {
+            0%,100%{
+                transform: translate(0,0);
+            }
+            50%{
+                transform: translate(0,100px);
+            }
+        }
+        .s3{
+            background-color: palegreen;
+            animation-name:rotate;
+        }
+        @keyframes rotate{
+            0%{
+                transform:rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .s4{
+            background-color: aqua;
+            animation-name: pulse;
+        }
+        @keyframes pulse {
+            0%,100%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+        }
+        .s5{
+            background-color: brown;
+            animation-name: fade;
+        }
+        @keyframes fade {
+            0%,100%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+        }
+        .s6{
+            background-color:white;
+            animation-name:rotate;
+            border-radius: 50%;
+            border: 15px solid navy;
+            border-top: 15px solid skyblue;
+        }
+        .rectangle{
+            height: 85%;
+            width: 40%;
+            border: 1px dashed brown;
+        }
+        .cube{
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+            animation: motion 3s infinite;
+        }
+        @keyframes motion {
+            0%,100%{
+                transform: translate(0);
+            }
+            25%{
+                transform: translate(502px,0);
+            }
+            50%{
+                transform: translate(502px,281px);
+            }
+            75%{
+                transform: translate(0,281px);
+            }
+        }
+        .balls{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            animation: google 3s infinite linear;
+            border: 2px solid black;   
+        }
+        @keyframes google{
+            0%,100%{
+                transform: translate(0);
+            }
+            25%{
+                transform: translate(0,50px);
+            }
+            75%{
+                transform: translate(0,-50px);
+            }
+        }
+        .b1{
+            background-color: blue;
+        }
+        .b2{
+            background-color: yellow;
+            animation-delay: 3s;
+        }
+        .b3{
+            background-color: rgb(52, 232, 94);
+            animation-delay: 6s;
+        }
+        .b4{
+            background-color: red;
+            animation-delay: 9s;
+        }
+        .b5{
+            background-color: purple;
+            animation-delay: 12s;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Animation</h1>
+    <div class="box">
+        <div class="square s1"></div>
+        <div class="square s2"></div>
+        <div class="square s3"></div>
+        <div class="square s4"></div>
+        <div class="square s5"></div>
+        <div class="square s6"></div>
+    </div>
+    <div class="box">
+        <div class="rectangle">
+            <div class="cube"></div>
+        </div>
+            <div class="rectangle"; style="display: flex; align-items: center;justify-content: center; gap: 10px;">
+                <div class="balls b1"></div>
+                <div class="balls b2"></div>
+                <div class="balls b3"></div>
+                <div class="balls b4"></div>
+                <div class="balls b5"></div>
+            </div>
+       
+    </div>
+</body>
+</html>
